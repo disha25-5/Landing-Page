@@ -8,6 +8,7 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+/*nav*/
 .container{
 	width: 90%;
 	height: 90%;
@@ -44,7 +45,7 @@ nav a:hover:before{
 	width: 80%;
 	transition: 0.4s linear;
 }
-
+/*text area*/
 .text{
 	max-width: 450px;
 	color: white;
@@ -64,6 +65,7 @@ nav a:hover:before{
 	text-align: justify;
 	
 }
+/*button*/
 button{
 	padding: 10px;
 	background: transparent;
@@ -72,11 +74,12 @@ button{
 	color: white;
 	border-radius: 8px;
 }
-
+/*social icon*/
 
 #icon{
 	margin-top: 30px;
 }
+/*moving image*/
 .image{
       position: absolute;
 	bottom: 0%;
@@ -88,3 +91,61 @@ button{
     bottom: 40px;
 	right: 100px;
 }
+ @keyframes pendulum {
+	0% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(-50px);
+	}
+	100% {
+	  transform: translateX(0);
+	}}
+	/*greeting box*/
+.conversation-box {
+  position: absolute;
+  bottom: 40px;
+  right: 130px;
+  width: 250px;
+  height: 100px;
+  margin-bottom: 300px;
+  margin-right: 300px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family:'sans ms', sans-serif;
+  animation: conversation-box 2s ease-in-out infinite;
+}
+.conversation-box.conversation-box {
+	border: 4px solid orange;
+  }
+  .conversation-box p {
+	display: inline-block;
+	transform: rotate(360deg);
+	white-space: nowrap;
+  }
+.transforming-text {
+	display: inline-block;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	white-space: nowrap;
+	animation:  conversation-box 2s ease-in-out infinite;
+  }
+   @keyframes  conversation-box{
+	0% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(-50px);
+	}
+	100% {
+	  transform: translateX(0);
+	}}
+	
